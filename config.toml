@@ -1,4 +1,8 @@
 baseURL = 'https://manueladragic.github.io/swh/'
 languageCode = 'en-us'
 title = 'Sketching with Hardware I'
-theme = 'ananke'
+
+[module]
+  [[module.imports]]
+    path = "github.com/theNewDynamic/gohugo-theme-ananke"
+    disable=false
