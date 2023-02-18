@@ -1,8 +1,20 @@
 baseURL = 'https://manueladragic.github.io/swh/'
 languageCode = 'en-us'
 title = 'Sketching with Hardware I'
+theme = "ananke"
 
-[module]
-  [[module.imports]]
-    path = "github.com/theNewDynamic/gohugo-theme-ananke"
-    disable=false
+[params]
+  text_color = ""
+  author = "Manuela Dragic"
+  favicon = "pictures/icon.PNG"
+  site_logo = "pictures/logo_weiss.png"
+  # choose a background color from any on this page: https://tachyons.io/docs/themes/skins/ and preface it with "bg-"
+  background_color_class = "bg-near-black"
+  recent_posts_number = 10
+
+# [module]
+#  [[module.imports]]
+#  path = "github.com/theNewDynamic/gohugo-theme-ananke"
+#  disable=false
+
+

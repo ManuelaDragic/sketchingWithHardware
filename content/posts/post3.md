@@ -1,6 +1,7 @@
 ---
-title: "Microcontroller Labor"
+title: "03. Microcontroller Labor"
 date: 2022-12-06T17:31:58+01:00
+featured_image: "/pictures/microcontroller.jpeg"
 draft: false
 ---
 

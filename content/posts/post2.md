@@ -1,10 +1,11 @@
 ---
-title: "E-Technik Labor"
+title: "02. E-Technik Labor"
 date: 2022-11-09T18:29:23+01:00
+featured_image: "/pictures/loeten.jpeg"
 draft: false
 ---
 
-### Teil 1: Löten
+### Löten
 
 Nach einer kurzen Einführung über die Grundlagen der Elektrotechnik ging es im ersten Lab auch direkt zum praktischen Teil über, welcher aus zwei Teilen bestand. 
 
@@ -24,11 +25,11 @@ Da Löten für mich eine Premiere war, war die Spannung natürlich groß. Nach e
 
 
 
-### Teil 2: Steckplatine und Messgeräte
+### Steckplatine und Messgeräte
 
 Als nächstes ging es dann zu ein paar kleineren Versuchen mit Messgeräten im Labor. Dabei befassten wir uns mit dem Ohmschen Gesetz, Kennlinien, Leistung, Widerständen und der Strommessung.
 
-{{< figure src="../pictures/Messung.png" width="100%"height="100%">}}
+{{< figure src="../pictures/Messung.png" width="60%"height="60%">}}
 
 Mit einem Multimeter sollten wir dann zum Beispiel bestimmen, wie sich die Stromstärke in Abhängigkeit der angelegten Spannung verändert und daraus einen gegebenen Widerstand berechnen.
 
