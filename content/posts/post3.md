@@ -5,9 +5,9 @@ featured_image: "/pictures/microcontroller.jpeg"
 draft: false
 ---
 
-### Tag 1
+### Erster Tag
 
-Nach einer kurzen theoretischen Einführung ging es am ersten Tag direkt in den praktischen Teil über.
+Am ersten Tag ging es nach einer kurzen theoretischen Einführung direkt in den praktischen Teil über.
 Wir bekamen eine Kiste mit verschiedenen Bauteilen und Sensoren, verschiedene Kabel, Widerstände und einen Arduino in die Hände gedrückt. 
 
 Zum Einstieg sollten wir verschiedene Sensoren aus der Kiste nehmen und uns überlegen, was diese für eine Funktion haben könnten.
@@ -51,14 +51,14 @@ Für eine etwas kompliziert Lösung fehlte uns dann die Zeit, weshalb wir das Pr
 
 
 
-### Tag 2
+### Zweiter Tag
 
 Am zweiten Tag des Microcontroller Labors wurden serielle Kommunikation und Interrupts besprochen.
 Leider habe ich an diesem Tag nicht an der Vorlesung teilnehmen können, da ich krank war. Somit konnte ich kein neues Projekt beginnen.  
 
 
 
-### Tag 3
+### Dritter Tag
 
 Am letzten Tag durften wir uns nach einer abschließenden, kurzen Theorie-Stunde wieder dem Baukasten widmen. 
 Ich entschied mich dafür, die serielle Kommunikation etwas zu vertiefen. Dazu nahm ich vier LED-Matrizen, welche ich miteinander verband.
