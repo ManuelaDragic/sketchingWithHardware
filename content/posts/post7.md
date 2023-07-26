@@ -40,7 +40,12 @@ Die Besucher interessierten sich vorallem für die Technik und den 3D-Druck.
 Das Highlight für alle war natürlich das Testen und Spielen des Gameboys.
 Ich bekam durchweg begeisterte Gesichter zu sehen und durfte mich über positives Feedback für meinen Controller-Gameboy freuen.
 
-{{< figure src="../pictures/demo.MOV" width="80%"height="60%">}}
+{{< rawhtml >}} 
+<video width=60% controls autoplay>
+    <source src="../pictures/demo.mp4" type="video/mp4">
+    Your browser does not support the video tag.  
+</video>
+{{< /rawhtml >}} 
 
 
 ### Ausblick
