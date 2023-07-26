@@ -1,6 +1,8 @@
 ---
 title: "01. Semesterverlauf"
 date: 2023-07-04T14:54:18+01:00
+featured_image: "/pictures/loetplan.jpg"
+show_reading_time: true
 draft: false
 ---
 
@@ -149,12 +151,23 @@ Lediglich der Rahmen der Uhr wurde neu gedruckt, da dieser Ursprünglich aus 3 T
 (Linke Seite mit Anschluss für Netzteil)
 {{< figure src="../pictures/Rahmen_links(neu).jpeg" width="60%"height="60%">}}
 
+#### Innenseite
+{{< figure src="../pictures/innenseite.jpeg" width="60%"height="60%">}}
+
 #### Vorderseite
 {{< figure src="../pictures/Wordclock.jpeg" width="60%"height="60%">}}
 
 #### Funktionen
-{{< figure src="../pictures/Funktionen.mov" width="60%"height="60%">}}
-{{< figure src="../pictures/Wordclock.mov" width="60%"height="60%">}}
+{{< rawhtml >}} 
+<video width=60% controls autoplay>
+    <source src="../pictures/Funktionen.mp4" type="video/mp4">
+    Your browser does not support the video tag.  
+</video>
+<video width=60% controls autoplay>
+    <source src="../pictures/Wordclock.mp4" type="video/mp4">
+    Your browser does not support the video tag.  
+</video>
+{{< /rawhtml >}}
 
 
 

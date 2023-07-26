@@ -17,26 +17,48 @@ Zum Einstieg sollten wir verschiedene Sensoren aus der Kiste nehmen und uns übe
 Im Anschluss daran, ging es dann auch schon los mit unserem "ersten Programm".
 Wir schlossen den Arduino an unsere Laptops an und starteten das Programm "Blink" - da blinkte auch schon die auf dem Arduino verbaute LED.
 
-{{< figure src="../pictures/ErstesProgramm.mov" width="60%"height="100%">}}
-
+{{< rawhtml >}} 
+<video width=60% controls autoplay>
+    <source src="../pictures/ErstesProgramm.mp4" type="video/mp4">
+    Your browser does not support the video tag.  
+</video>
+{{< /rawhtml >}} 
 
 Danach versuchten wir außerdem noch diverse externe LED´s anzuschließen. Dazu nahmen wir eine Steckplatine und ein paar Kabel zur Hilfe. 
 Ich schaltete zunächst zwei LED´s in Reihe und anschließend parallel, wobei die parallel geschalteten LED´s natürlich viel heller leuchteten.
 
-{{< figure src="../pictures/Reihenschaltung.mov" width="60%"height="100%">}}
-{{< figure src="../pictures/Parallelschaltung.mov" width="60%"height="100%">}}
+{{< rawhtml >}} 
+<video width=60% controls autoplay>
+    <source src="../pictures/Reihenschaltung.mp4" type="video/mp4">
+    Your browser does not support the video tag.  
+</video>
+<video width=60% controls autoplay>
+    <source src="../pictures/Parallelschaltung.mp4" type="video/mp4">
+    Your browser does not support the video tag.  
+</video>
+{{< /rawhtml >}} 
 
 Im nächsten Schritt kamen dann erstmals die verschiedenen Sensoren zum Einsatz. 
 Als erstes versuchte ich einen Touchensor zu benutzen. Bei Berührung sollte dieser eine LED ein- und ausschalten.
 
-{{< figure src="../pictures/TouchSensor.mov" width="100%"height="100%">}}
+{{< rawhtml >}} 
+<video width=60% controls autoplay>
+    <source src="../pictures/TouchSensor.mp4" type="video/mp4">
+    Your browser does not support the video tag.  
+</video>
+{{< /rawhtml >}} 
 
 
 Da der Sensor aber nur bedingt funktionieren wollte, musste ich mir etwas anderes einfallen lassen.
 Ich stieg also auf einen einfachen Button um. 
 Das Skript funktionierte auf Anhieb und die LED machte das was ich wollte.
 
-{{< figure src="../pictures/Button.mov" width="100%"height="100%">}}
+{{< rawhtml >}} 
+<video width=60% controls autoplay>
+    <source src="../pictures/Button.mp4" type="video/mp4">
+    Your browser does not support the video tag.  
+</video>
+{{< /rawhtml >}}  
 
 
 

@@ -17,8 +17,12 @@ Als nächstes ging es dann zum praktischen Teil, wo Baukästen ausgeteilt wurden
 Die erste Aufgabe war es, eine einfache Schubkurbel zu bauen. Diese wandelt eine Rotationsbewegung in eine Schubbwegung um.
 
 {{< figure src="../pictures/Schubkurbel.jpeg" width="80%"height="100%">}}
-{{< figure src="../pictures/Schubkurbel.mov" width="80%"height="100%">}}
-
+{{< rawhtml >}} 
+<video width=60% controls autoplay>
+    <source src="../pictures/Schubkurbel.mp4" type="video/mp4">
+    Your browser does not support the video tag.  
+</video>
+{{< /rawhtml >}} 
 
 
 ### 3-Gang-Schaltgetriebe
@@ -27,15 +31,30 @@ Die nächste Aufgabe wurde dann schon etwas schwieriger. Wir sollten ein 3-Gang-
 Nach anfänglicher Skepsis und kleinen Problemen mit der korrekten Einstellung der Zahnräder gelang uns dies aber recht schnell.
 
 {{< figure src="../pictures/Getriebe.jpeg" width="80%"height="100%">}}
-{{< figure src="../pictures/Getriebe.mov" width="80%"height="100%">}}
+{{< rawhtml >}} 
+<video width=60% controls autoplay>
+    <source src="../pictures/Getriebe.mp4" type="video/mp4">
+    Your browser does not support the video tag.  
+</video>
+{{< /rawhtml >}} 
 
 
 Anschließend durften wir uns dann noch eigene Projekte aussuchen, welche wir dann ebenfalls nachbauen sollten.
 Wir entschieden uns als erstes für ein Scherenhubgetriebe.
 
-{{< figure src="../pictures/Scherenhub.mov" width="80%"height="100%">}}
+{{< rawhtml >}} 
+<video width=60% controls autoplay>
+    <source src="../pictures/Scherenhub.mp4" type="video/mp4">
+    Your browser does not support the video tag.  
+</video>
+{{< /rawhtml >}} 
 
 
 Als letztes suchten wir uns noch das sogenannte Planetengetriebe aus.
 {{< figure src="../pictures/Planetengetriebe.jpeg" width="80%"height="100%">}}
-{{< figure src="../pictures/Planetengetriebe.mov" width="80%"height="100%">}}
+{{< rawhtml >}} 
+<video width=60% controls autoplay>
+    <source src="../pictures/Planetengetriebe.mp4" type="video/mp4">
+    Your browser does not support the video tag.  
+</video>
+{{< /rawhtml >}} 
