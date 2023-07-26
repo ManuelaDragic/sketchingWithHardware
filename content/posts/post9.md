@@ -75,28 +75,32 @@ Bauteile zu Drucken:
 ### Dateien
 
 #### STL's:
-- <a href="https://github.com/ManuelaDragic/swh/blob/main/content/posts/files/Matrizen%20Halterung%20v4.stl" download>Matrizenhalterung Downloaden</a>
-- 
-- 
-- 
-- 
+- <a href="https://github.com/ManuelaDragic/swh/blob/main/files/Matrizenhalterung.stl" download>Matrizenhalterung</a>
+- <a href="https://github.com/ManuelaDragic/swh/blob/main/files/Word%20Clock%20Rahmen.stl" download>Rahmen</a>
+- <a href="https://github.com/ManuelaDragic/swh/blob/main/files/WordClock%20Raster.stl"    download>Raster</a>
+- <a href="https://github.com/ManuelaDragic/swh/blob/main/files/WordClock%20Rasterfüllung.stl" download>Rasterfüllung</a>
+- <a href="https://github.com/ManuelaDragic/swh/blob/main/files/WordClock%20Rueckplatte.stl" download>Rückplatte</a>
 
 #### Fusion Dateien:
-- 
-- 
-- 
-- 
-- 
+- <a href="https://github.com/ManuelaDragic/swh/blob/main/files/Matrizenhalterung.f3d" download>Matrizenhalterung</a>
+- <a href="https://github.com/ManuelaDragic/swh/blob/main/files/Word%20Clock%20Rahmen.f3d" download>Rahmen</a>
+- <a href="https://github.com/ManuelaDragic/swh/blob/main/files/WordClock%20Raster.f3d"    download>Raster</a>
+- <a href="https://github.com/ManuelaDragic/swh/blob/main/files/WordClock%20Rasterfüllung.f3d" download>Rasterfüllung</a>
+- <a href="https://github.com/ManuelaDragic/swh/blob/main/files/WordClock%20Rueckplatte.f3d" download>Rückplatte</a>
 
 
 #### Lightburn Dateien:
-- 
-- 
+- <a href="https://github.com/ManuelaDragic/swh/blob/main/files/Matrizen%20Halterung%20v4.stl" download>Buchstabenplatte</a>
+- <a href="https://github.com/ManuelaDragic/swh/blob/main/files/Matrizen%20Halterung%20v4.stl" download>Furnier</a>
+
+
+#### SVG's:
+- <a href="https://github.com/ManuelaDragic/swh/blob/main/files/Matrizen%20Halterung%20v4.stl" download>Buchstabenplatte</a>
+- <a href="https://github.com/ManuelaDragic/swh/blob/main/files/Matrizen%20Halterung%20v4.stl" download>Furnier</a>
 
 #### Code:
-- 
-
-
+- <a href="https://github.com/ManuelaDragic/swh/blob/main/files/Matrizen%20Halterung%20v4.stl" download>Code</a>
+- <a href="https://github.com/ManuelaDragic/swh/blob/main/files/Matrizen%20Halterung%20v4.stl" download>Font</a>
 
 
 ### Aufbau und Lötplan
@@ -105,10 +109,8 @@ Bauteile zu Drucken:
 {{< figure src="../pictures/loetplan.jpg" width="100%"height="80%">}}
 
 
-
 ### Schritt für Schritt Bauanleitung
 
-<a href="../posts/files/Matrizen Halterung v4.stl"></a>
 
 ```cpp
 #include test
