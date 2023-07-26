@@ -12,9 +12,14 @@ theme = "ananke"
   background_color_class = "bg-near-black"
   recent_posts_number = 10
 
+[markup.goldmark.renderer]
+  unsafe = true
+
 # [module]
 #  [[module.imports]]
 #  path = "github.com/theNewDynamic/gohugo-theme-ananke"
 #  disable=false
+
+
 
 

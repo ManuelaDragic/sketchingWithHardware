@@ -6,7 +6,7 @@ draft: false
 ---
 
 Eine WordClock ist eine Uhr, die anstelle von Zahlen Wörter oder Buchstaben verwendet, um die Uhrzeit anzuzeigen. 
-Indem die Uhr mit einem intelligenten Kalender verknüpft wird, schafft sie eine neue und einzigartige Anwendung für ihre Benutzer, die dabei hilft die Uhrzeit im Blick zu behalten und gleichzeitig über anstehende Termine informiert zu sein.
+Indem die WordClock mit einem intelligenten Kalender verknüpft wird, hilft sie dabei die Uhrzeit im Blick zu behalten und gleichzeitig über anstehende Termine informiert zu sein.
 Daneben bietet der "WordClockanazier" weitere Features wie einen Farbwechselbutton, ein Ambient-Light und eine automatische Helligkeitsanpassung.
 Einzelne Komponenten wie das Ambient-Light oder der Kalender können zudem beliebig ein- und ausgeschaltet werden. 
 Betrieben wird die Uhr mit einem 5V Netzteil.
@@ -15,7 +15,7 @@ Betrieben wird die Uhr mit einem 5V Netzteil.
 ### Bauteile, Zubehör und benötigte Programme
 
 Technik:
-- [ ] Wemos D1 mini
+- [ ] Wemos D1 mini 
 - [ ] RTC Modul
 - [ ] Knopf Batterie (für RTC Modul)
 - [ ] 3m LED Stripe (60 LEDs pro Meter)
@@ -74,21 +74,47 @@ Bauteile zu Drucken:
 
 ### Dateien
 
+#### STL's:
+- <a href="https://github.com/ManuelaDragic/swh/blob/main/content/posts/files/Matrizen%20Halterung%20v4.stl" download>Matrizenhalterung Downloaden</a>
+- 
+- 
+- 
+- 
+
+#### Fusion Dateien:
+- 
+- 
+- 
+- 
+- 
+
+
+#### Lightburn Dateien:
+- 
+- 
+
+#### Code:
+- 
 
 
 
 
+### Aufbau und Lötplan
 
-### Lötplan
-
-
+{{< figure src="../pictures/aufbau.jpg" width="100%"height="80%">}}
+{{< figure src="../pictures/loetplan.jpg" width="100%"height="80%">}}
 
 
 
 ### Schritt für Schritt Bauanleitung
-[Datei](files/Matrizenhalterung%20Rechts.stl)
 
+<a href="../posts/files/Matrizen Halterung v4.stl"></a>
 
+```cpp
+#include test
+test
+test
+ ```
 
 
 ### Lizensierung

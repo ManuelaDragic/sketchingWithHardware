@@ -14,9 +14,11 @@ Unsere Projekt-Idee und einen groben Zeitplan sollten wir dann beim Projekt-Pitc
 
 Zudem wurden uns einige Tools an die Hand gegeben, welche wir verwenden durften um unser Projekt zu planen. Ich entschied mich zunächst einmal für Notion, da ich damit bereits gearbeitet hatte, jedoch merkte ich sehr schnell, dass der klassische Weg mit Post-Its, Kalender, Notizen und Checkliste sich besser für mich eignete. Somit plante ich mein komplettes Projekt letztendlich ohne die vorgestellten Tools.
 
-Nach abgeschlossener Planung ging es dann direkt ins Labor, um eine Teileliste für das Projekt und einen grobes Design zu entwerfen.
+Nach abgeschlossener Planung ging es dann direkt ins Labor, um eine Teileliste für das Projekt und eine grobe Skizze zu entwerfen.
 
 {{< figure src="../pictures/skizze1.jpg" width="60%"height="60%">}}
+
+{{< figure src="../pictures/skizze2.jpg" width="100%"height="60%">}}
 
 ### Projektphase
 
@@ -28,25 +30,53 @@ Dazu sollten die Buchstaben der Wordclock in 3mm dicke Spanplatten gecuttet werd
 Das Raster sollte aus schwarzem Fillament 3D-gedruckt werden. In das Raster sollten dann 3D-gedruckte Quadrate aus transparentem Fillament eingesetzt werden, um das Licht etwas zu streuen und gleichzeitig die Lämpchen zu verstecken.
 Für die LED-Stripe-Halterung überlegte ich mir Schlitze in eine weitere Spanplatte zu cutten, sodass der LED-Stripe einfach durchgefädelt werden konnte. 
 Die Rückseite sollte dann aus durchsichtigem Fillament 3D-gedruckt werden und anschließend mit dem Rahmen verschraubt werden.
+Das Projekt sollte außerdem noch einige weitere Features bieten. So wollte ich die Farben der Uhr mit einem Button wechseln können. Zudem sollte die Uhr natürlich möglichst stromsparend sein. Um dies zu erreichen wollte ich zum Beispiel, dass die Uhr, je nach Helligkeit, von selbst heller und dunkler wird. Zudem sollte man einzelne Komponenten, wie die LED-Matrizen oder das geplante Ambient-Light seperat ein- und ausschalten können.
+Um die gesamte Uhr auszuschalten sollte dann noch ein Kippschalter angebracht werden.
 
-{{< figure src="../pictures/skizze2.jpg" width="100%"height="60%">}}
+##### 3D-Modelle
+{{< figure src="../pictures/rahmen.png" width="60%"height="60%">}}
+{{< figure src="../pictures/matrizenhalterung.png" width="60%"height="60%">}}
+{{< figure src="../pictures/raster.png" width="60%"height="60%">}}
+{{< figure src="../pictures/raster_innen.png" width="60%"height="60%">}}
+{{< figure src="../pictures/hinten.png" width="60%"height="60%">}}
+
+##### Lasercut
+{{< figure src="../pictures/lasercut1.jpeg" width="60%"height="60%">}}
 
 Während ich auf die erste Bestellung wartete, erstellte ich die Modelle der Matrizenhalterung und des Rasters, sowie die Datei um die Buchstabenplatte zu cutten.
 Dann ging es auch schon ans Coden der ersten Komponenten. Ich schrieb zunächst einmal einen Codeschnipsel zum testen des LED-Stripes und der LED Matrizen, welchen ich nach Ankunft der Teile sofort testete. 
 Der Code für den LED-Stripe funktionierte auf anhieb, während der Code für die LED Matrizen Probleme machte.
 Da ich Bibliotheken verwendete, welche nicht mit meinem ESP kompatibel waren, musste ich den Code also umschreiben und eine andere Bibliothek verwenden. 
 In der Zwischenzeit startete ich schonmal den Druck der ersten Komponenten und cuttete mit dem Lasercutter die Buchstabenplatte. 
+
+{{< figure src="../pictures/druck.jpeg" width="60%"height="60%">}}
+{{< figure src="../pictures/lasercut2.jpeg" width="60%"height="60%">}}
+
 Das cutten nahm etwa 7 Stunden in Anspruch, weshalb ich währenddessen weiter am Code schreiben konnte.
-Um die genaue Uhrzeit zu bekommen und später auf dem LED-Stripe anzuzeigen verwendete ich ein RTC-Modul. Der Code dafür war relativ simpel, da man die LED's nur zur jeweiligen Uhrzeit an- und ausschalten musste. 
+Um die genaue Uhrzeit zu bekommen und später auf dem LED-Stripe anzuzeigen, verwendete ich ein RTC-Modul. Der Code dafür war relativ simpel, da man die LED's nur zur jeweiligen Uhrzeit ein- und ausschalten musste. 
 Der Code für die Kalenderdaten gestaltete sich dafür aber umso schwieriger. 
 Da man die Kalenderdaten nicht so einfach direkt aus dem Apple-Kalender auslesen konnte, musste ich meinen Kalender zunächst in einen Google-Kalender übertragen.
 Die Daten werden dann mit einem Google Apps Skript ausgelesen und anschließend bereitgestellt.
 Da die Matrizen nicht mit Umlauten umgehen konnten, mussten diese dann noch herausgefiltert und ersetzt werden. 
 Zudem wandelte ich die Buchstaben hier in Großbuchstaben um, sodass sie später besser zur Font der Wordclock passten. 
 Ebenso passte ich deshalb auch die Font der LED-Matrizen an.
+
+##### Kalenderdaten
+
+{{< figure src="../pictures/kalender_desktop.png" width="100%"height="60%">}}
+{{< figure src="../pictures/applekalender.png" width="60%"height="60%">}}
+{{< figure src="../pictures/kalenderdaten.png" width="60%"height="60%">}}
+
+##### Font
+
+{{< figure src="../pictures/font.png" width="100%"height="80%">}}
+
+
 Als letztes programmierte ich dann noch 3 Buttons und einen Helligkeitssensor.
-Mit einem Button sollte das Ambient-Light, mit einem weiteren die LED-Matrizen ein- und ausgeschaltet werden können.
+Mit einem der Buttons sollte das Ambient-Light, mit einem weiteren Button die LED-Matrizen ein- und ausgeschaltet werden können.
 Der dritte Button sollte die Farben der LED's verändern und der Helligkeitssensor sollte die Helligkeit der LED's zur jeweiligen Tageszeit anpassen.
+Da ich jedoch nur noch zwei Pin's, einen digitalen und einen analogen, zur Verfügung hatte, musste ich dabei etwas improvisieren.
+Um die verschiedenen Signale zu erfassen verwendete ich mehrere verschiedene Widerstände, die zwischen Buttons und den Helligkeitssensor gelötet wurden. Somit konnte ich dann zwei Butons und den Sensor an den analogen Pin anschließen. Der letzte Button wurde einfach an den digitalen Pin angeschlossen.
 
 
 ### Fertigungsverfahren
@@ -126,9 +156,6 @@ Lediglich der Rahmen der Uhr wurde neu gedruckt, da dieser Ursprünglich aus 3 T
 {{< figure src="../pictures/Funktionen.mov" width="60%"height="60%">}}
 {{< figure src="../pictures/Wordclock.mov" width="60%"height="60%">}}
 
-#### Kalenderdaten
-{{< figure src="../pictures/Kalender.PNG" width="60%"height="60%">}}
-{{< figure src="../pictures/Kalenderdaten.PNG" width="60%"height="60%">}}
 
 
 
