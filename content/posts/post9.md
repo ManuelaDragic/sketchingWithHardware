@@ -176,8 +176,13 @@ Nach dem durchfädeln sollten in jeder Reihe 11 LED's nach vorne zeigen. An den 
 
 {{< figure src="../pictures/led_halterung.jpeg" width="100%"height="60%">}}
 
-Über die LED's wird dann das Raster gelegt. Damit nacher alles besser hält, habe ich doppelseitiges Klebeband verwendet, um die beiden Teile zusammen zu kleben. In die Löcher des Rasters werden dann die durchsichtigen Quadrate eingesetzt. Diese müssen nicht verklebt werden, da sie später zwischen den anderen beiden Platten eingeklemmt sind und somit nicht mehr verrutschen können, bei Bedarf können diese jedoch noch mit 2 Komponenten Kleber in das Raster geklebt werden. 
+Über die LED's wird dann das Raster gelegt. Damit nacher alles besser hält, habe ich doppelseitiges Klebeband verwendet, um die beiden Teile zusammen zu kleben. In die Löcher des Rasters werden dann die durchsichtigen Quadrate eingesetzt. Diese müssen nicht verklebt werden, da sie später zwischen den beiden anderen Platten eingeklemmt werden und somit nicht mehr verrutschen können.
+Bei Bedarf können diese jedoch noch mit 2 Komponenten Kleber in das Raster geklebt werden. 
 Anschließend wird dann die gecuttete Buchstabenplatte, erneut mit doppelseitigem Klebeband, auf das Raster geklebt.
+
+{{< figure src="../pictures/raster.JPG" width="100%"height="100%">}}
+{{< figure src="../pictures/platte.jpeg" width="100%"height="100%">}}
+
 
 #### 5. Verkabelung
 
@@ -235,6 +240,10 @@ GND - G
 
 
 Um die Kabel an den Adapter anzuschließen, schraubt ihr mit einem kleinen Schraubenzieher die Schrauben am Adapter ein wenig auf, steckt die Kabel rein und schraubt die Schrauben anschließend wieder gut zu.
+
+
+{{< figure src="../pictures/verkabelung.PNG" width="100%"height="100%">}}
+
 
 ##### Buttons und Helligkeitssensor
 
