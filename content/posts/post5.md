@@ -2,6 +2,7 @@
 title: "05. Subtraktive Fertigung"
 date: 2023-01-31T18:28:12+01:00
 featured_image: "/pictures/subtraktive.jpeg"
+show_reading_time: true
 draft: false
 ---
 

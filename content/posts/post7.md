@@ -2,6 +2,7 @@
 title: "07. Abschlusspräsentation"
 date: 2023-03-05T14:54:18+01:00
 featured_image: "/pictures/Gameboy.png"
+show_reading_time: true
 draft: false
 ---
 

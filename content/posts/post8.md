@@ -1,5 +1,5 @@
 ---
-title: "01. Semesterverlauf"
+title: "01. Das zweite Semester - Semesterverlauf"
 date: 2023-07-04T14:54:18+01:00
 featured_image: "/pictures/loetplan.jpg"
 show_reading_time: true
@@ -67,7 +67,8 @@ Ebenso passte ich deshalb auch die Font der LED-Matrizen an.
 
 {{< figure src="../pictures/kalender_desktop.png" width="100%"height="60%">}}
 {{< figure src="../pictures/applekalender.png" width="60%"height="60%">}}
-{{< figure src="../pictures/kalenderdaten.png" width="60%"height="60%">}}
+{{< figure src="../pictures/kalenderdaten2.png" width="60%"height="60%">}}
+
 
 ##### Font
 

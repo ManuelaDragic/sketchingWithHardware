@@ -2,6 +2,7 @@
 title: "02. E-Technik Labor"
 date: 2022-11-09T18:29:23+01:00
 featured_image: "/pictures/loeten.jpeg"
+show_reading_time: true
 draft: false
 ---
 

@@ -2,6 +2,7 @@
 title: "06. Additive Fertigung"
 date: 2023-02-13T14:25:02+01:00
 featured_image: "/pictures/additive.jpeg"
+show_reading_time: true
 draft: false
 ---
 
