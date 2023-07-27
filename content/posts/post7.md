@@ -27,7 +27,7 @@ Der Höhepunkt des ersten Semesters war für mich das Übungsprojekt.
 Auch wenn wir lange Nächte im Labor verbrachten, wegen kleinen Fehlern fast wahnsinnig wurden und Ali an den Rand der Verzweiflung brachten (Tschuldigung :D), war die Abschlusspräsentation ein voller Erfolg!
 Die Projekte wurden dabei in Form einer kleinen Messe vorgestellt. Dazu sollten wir ein Poster entwerfen, welches dann über unseren kleinen Stand gehängt wurde.
 
-{{< figure src="../pictures/Poster.pdf" width="80%"height="60%">}}
+{{< figure src="../pictures/Poster.png" width="80%"height="60%">}}
 
 Besonders spannend war es zu sehen, wie unterschiedlich die Umsetzung der einzelnen Projekte war - 
 Und nicht nur die Studenten, auch die Besucher interessierten sich sehr für unsere Projekte. 

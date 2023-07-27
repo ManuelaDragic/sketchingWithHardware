@@ -75,6 +75,7 @@ Die Kosten für das Projekt betragen etwa 50 Euro.
 - [ ] Arduino IDE
 - [ ] Lightburn 
 - [ ] (Fusion 360)
+- [ ] (UltiMaker Cura)
 
 #### Bauteile zu Cutten:
 - [ ] Buchstabenplatte (3mm Spanplatte)
@@ -118,8 +119,14 @@ Die Kosten für das Projekt betragen etwa 50 Euro.
 - <a href="https://github.com/ManuelaDragic/swh/blob/main/files/Lasercut.svg" download>SVG Lasercut</a>
 
 #### Code:
-- <a href="https://github.com/ManuelaDragic/swh/blob/main/code/WordClock.ino" download>Programmcode</a>
-- <a href="https://github.com/ManuelaDragic/swh/blob/main/code/WordClockFont.h" download>WordClock Font</a>
+- <a href="https://github.com/ManuelaDragic/swh/blob/main/code/Kalender.gs" download>GoogleSkript</a>
+- <a href="https://github.com/ManuelaDragic/swh/blob/main/code/WordClock/WordClock.ino" download>Arduino Code</a>
+- <a href="https://github.com/ManuelaDragic/swh/blob/main/code/WordClock/WordClockFont.h" download>WordClock Font</a>
+
+
+#### Links:
+- <a href="https://script.google.com" download>Google Apps Skript</a>
+- <a href="https://workspace.google.com/products/calendar/?hl=de#" download>Google Kalender</a>
 
 
 </br>
@@ -255,7 +262,7 @@ Dazu geht ihr im Menü auf Tools > Board > ESP8266 > LOLIN WEMOS D1 R2 & mini.
 
 Danach verbindet ihr euren ESP mit einem USB Kabel an euren PC oder Laptop und wählt unter Port den entsprechenden USB Port aus.
 Nun geht es an den Code des Wordclockanizers.
-Der <a href="https://github.com/ManuelaDragic/swh/tree/main/code" download>Programmcode</a> kann ebenfalls einfach im Repo gedownloaded werden. Beachtet jedoch, dass ihr den Code und die Font im gleichen Ordner abspeichert. Der Ordner muss den selben Namen wie unser Programmcode haben, in unserem Fall ist das "WordClock".
+Der <a href="https://github.com/ManuelaDragic/swh/tree/main/code/WordClock" download>Programmcode</a> kann ebenfalls einfach im GitHub-Repo heruntergeladen werden. Beachtet jedoch, dass ihr den Code und die Font im gleichen Ordner abspeichern müsst. Der Ordner muss den selben Namen wie unser Programmcode haben, in unserem Fall ist das "WordClock".
 
 #### 6.1 Libraries
 
@@ -332,7 +339,7 @@ Anschließend geht ihr auf <a href="https://script.google.com" download>script.g
 
 {{< figure src="../pictures/neuesProjekt.png" width="100%"height="100%">}}
 
-Gebt dem Projekt einen Namen und kopiert folgenden Code hinein:
+Gebt dem Projekt einen Namen und kopiert folgenden <a href="https://github.com/ManuelaDragic/swh/blob/main/code/Kalender.gs" download>Code</a> hinein:
 
 ```js
 function doGet(e) {
@@ -452,6 +459,8 @@ Speichert den Code ab und drückt dann auf "Bereitstellen > Neue Bereitstellung"
 
 Als Typ wählt ihr dann "Web-App" aus und bei Zugriffsrechte "Jeder". Anschließend klickt ihr auf "bereitstellen".
 Jetzt erscheinen eine Bereitstellungs-ID und eine URL. Wenn ihr auf diese URL klickt und alles funktioniert hat, sollten nun eure Kalenderdaten der nächsten 7 Tage angezeigt werden.
+
+{{< figure src="../pictures/kalenderdaten_desktop.png" width="100%"height="100%">}}
 
 Kopiert nun die URL und fügt sie im Arduino Code in die Methode "getKalenderData()" bei "YOUR_URL" ein:
 
@@ -936,7 +945,7 @@ void showTime() {
 
 #### 7.3 Kalenderdaten
 
-Die Kalenderdaten werden mit Hilfe eines GoogleSkripts ausgelesen und als String gespeichert.
+Die Kalenderdaten werden mit Hilfe eines <a href="https://github.com/ManuelaDragic/swh/blob/main/code/Kalender.gs" download>GoogleSkripts</a> ausgelesen und als String gespeichert.
 Da die LED-Matrizen keine Umlaute anzeigen können, werden diese hier noch vorher herausgefiltert. Zusätzlich wird der String in Großbuchstaben umgewandelt. Durch anschließendes Bereitstellen einer WebApp können die Kalenderdaten dann mit einem einfachen HTTP-Request abgefragt werden. 
 Beim Einschalten der Uhr werden die Daten das Erste mal abgefragt. Der empfangene String wird dann in Substrings unterteilt und anschließend auf den LED-Matrizen angezeigt.
 
@@ -948,7 +957,7 @@ void getKalenderData() {
   HTTPClient http;
   client.setInsecure();
   client.connect("script.googleusercontent.com", 443);
-  String url = "https://script.googleusercontent.com/macros/echo?user_content_key=UVD2c0fU4HIhlTXUbRy2SPD-POldnF4WqYBk-lC4QJ-DxAsUHTDRI-_ln3QRAYbp3X0m2KhzVZ7MtOAKDfAUeai5pGDHS3I5m5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnKA7A_lHrrX9Az2gE-Gb46mWXrX2xUXuwSIQtVGKvIX0ziVJ0SibTZqXWknVA5qw4Y1tPBshKWLn6s576l97UydO-Is66Eda2w&lib=MmSqlZGkjUZzizKVJNOp1s4cy7qauPi9E";
+  String url = "YOUR_URL";
   http.setTimeout(20000);
   http.setFollowRedirects(HTTPC_STRICT_FOLLOW_REDIRECTS);
   http.begin(client, url); 
@@ -1150,7 +1159,7 @@ Der ON/OFF-Kippschalter wird erst nach zusammenbauen der Uhr angelötet, da dies
 
 Überprüft vor dem Anschließen des Stroms nochmal alle Lötstellen und achtet darauf, dass ihr keinen Kurzschluss verursacht habt, indem ihr aus Versehen Lötstellen verbunden habt. 
 
-#### 8. Zusammenbau
+#### 9. Zusammenbau
 
 Zu Schluss muss das Projekt dann noch zusammengebaut werden.
 Dazu setzt ihr zunächst die Matrizenhalterung in den Rahmen ein. In die Matrizenhalterung werden dann die LED-Matrizen geseteckt. Die Kabel führt ihr nach oben durch die Lücke in das Innere des Rahmens. Die Technik befindet sich so hinter der zuvor gebauten Buchstabenplatte. Setzt die Platinen nach folgendem Plan vorsichtig in die jeweiligen Halterungen ein. 
@@ -1171,7 +1180,7 @@ Zu guter Letzt kann dann noch das Furnier auf die Vorderseite der Uhr geklebt we
 {{< figure src="../pictures/schritt3.jpeg" width="60%"height="60%">}}
 {{< figure src="../pictures/schritt4.jpeg" width="60%"height="60%">}}
 {{< figure src="../pictures/schritt5.jpeg" width="60%"height="60%">}}
-{{< figure src="../pictures/furnier.jpeg" width="60%"height="60%">}}
+{{< figure src="../pictures/clock.jpeg" width="60%"height="60%">}}
 
 ### Lizensierung
 

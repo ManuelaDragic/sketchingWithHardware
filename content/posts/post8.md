@@ -14,6 +14,9 @@ Dieser sollte neben der Uhrzeit noch den Wochentag, die Kalenderwoche und die Te
 Um die Kalenderdaten auszulesen, überlegte ich mir, meinen Apple-Kalender zunächst einmal in einen Google-Kalender zu übertragen und diesen dann mithilfe der API auszulesen. Die Kalenderdaten sollten auf einem Display oder als Lauftext auf LED-Matrizen angezeigt werden.
 Unsere Projekt-Idee und einen groben Zeitplan sollten wir dann beim Projekt-Pitch vorstellen.
 
+{{< figure src="../pictures/projektpitch1.png" width="60%"height="60%">}}
+{{< figure src="../pictures/projektpitch2.png" width="60%"height="60%">}}
+
 Zudem wurden uns einige Tools an die Hand gegeben, welche wir verwenden durften um unser Projekt zu planen. Ich entschied mich zunächst einmal für Notion, da ich damit bereits gearbeitet hatte, jedoch merkte ich sehr schnell, dass der klassische Weg mit Post-Its, Kalender, Notizen und Checkliste sich besser für mich eignete. Somit plante ich mein komplettes Projekt letztendlich ohne die vorgestellten Tools.
 
 Nach abgeschlossener Planung ging es dann direkt ins Labor, um eine Teileliste für das Projekt und eine grobe Skizze zu entwerfen.
@@ -80,6 +83,10 @@ Mit einem der Buttons sollte das Ambient-Light, mit einem weiteren Button die LE
 Der dritte Button sollte die Farben der LED's verändern und der Helligkeitssensor sollte die Helligkeit der LED's zur jeweiligen Tageszeit anpassen.
 Da ich jedoch nur noch zwei Pin's, einen digitalen und einen analogen, zur Verfügung hatte, musste ich dabei etwas improvisieren.
 Um die verschiedenen Signale zu erfassen verwendete ich mehrere verschiedene Widerstände, die zwischen Buttons und den Helligkeitssensor gelötet wurden. Somit konnte ich dann zwei Butons und den Sensor an den analogen Pin anschließen. Der letzte Button wurde einfach an den digitalen Pin angeschlossen.
+
+Unsere fertigen Projekte wurden dann auf dem Streiflicht vorgestellt.
+
+{{< figure src="../pictures/WordClockanizer_Plakat.png" width="100%"height="80%">}}
 
 
 ### Fertigungsverfahren
