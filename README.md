@@ -1,1 +1,1 @@
-# Projekt des Anwendungsfachs Sketching with Hardware I + II
+# Project of the applied subject Sketching with Hardware
